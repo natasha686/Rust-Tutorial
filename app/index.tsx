@@ -6,10 +6,7 @@ export default function Index() {
   return (
     <ScrollView>
       <View style={styles.mainContainer}>
-        <View style={ styles.topContainer }>
           <Text style={styles.title}>Rust Tutorial</Text>
-        </View>
-
         <Tutorial />
       </View>
     </ScrollView>
@@ -20,8 +17,10 @@ const { height, width } = Dimensions.get('window'); // get the height and width 
 
 const styles = StyleSheet.create({
   title: {
+    paddingTop: height * .05,
     fontSize: 40,
     fontWeight: 'bold',
+    textAlign: 'center'
   },
   topContainer: {
     height: height * .07,

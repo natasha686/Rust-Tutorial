@@ -15,7 +15,7 @@ import Setup from './TutorialTabs/Setup';
 
 
 export default function App() {
-    const [activeTab, setActiveTab] = useState('Home');
+    const [activeTab, setActiveTab] = useState('Setup');
 
     const renderTab = () => {
         switch (activeTab) {
