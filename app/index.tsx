@@ -17,7 +17,7 @@ const { height, width } = Dimensions.get('window'); // get the height and width 
 
 const styles = StyleSheet.create({
   title: {
-    paddingTop: height * .05,
+    paddingTop: height * .07,
     fontSize: 40,
     fontWeight: 'bold',
     textAlign: 'center'

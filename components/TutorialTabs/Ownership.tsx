@@ -12,7 +12,7 @@ export default function Ownership() {
             </View>
             <View style={styles.numberedBox}>
                 <Text style={styles.number}>2</Text>
-                <Text>There can only be one owner at a time</Text>
+                <Text>There can only be one owner at a time.</Text>
             </View>
             <View style={styles.numberedBox}>
                 <Text style={styles.number}>3</Text>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dimensions, Linking, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Dimensions, Image, Linking, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const { height, width } = Dimensions.get('window');
 
@@ -10,6 +10,9 @@ export default function Setup() {
 
     return (
       <View style={styles.container}>
+        <View style={{ alignItems: 'center' }}>
+          <Image source={require('../../assets/images/rustacean-flat-happy.png')} />
+        </View>
         <View style={styles.numberedBox}>
           <Text style={styles.number}>1</Text>
           <Text>Welcome to a brief tutorial on Rust! This interactive tutorial will cover the first six chapters of the Rust book. The tutorial is written from the perspective that the person has a basic understanding of programming concepts.</Text>
@@ -41,7 +44,7 @@ export default function Setup() {
               </Text>
             </View>
             <Text>Hit Run to see the output of this function!</Text>
-            <TouchableOpacity style={ styles.button } onPress={() => setRunHello(true)}>
+            <TouchableOpacity style={styles.button} onPress={() => setRunHello(true)}>
               <Text style={{ color: 'white' }}>Run</Text>
             </TouchableOpacity>
             {runHello && (

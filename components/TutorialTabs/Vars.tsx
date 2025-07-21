@@ -53,7 +53,7 @@ const Floats = () => {
 }
 
 const Booleans = () => {
-    const items = ['true or false'];
+    const items = ['True or false'];
 
     return (
         <View style={{ justifyContent: 'flex-end' }}>
@@ -77,7 +77,7 @@ const Booleans = () => {
 }
 
 const Characters = () => {
-    const items = ['Unicode scalar values', 'denoted by single quotes'];
+    const items = ['Unicode scalar values', 'Denoted by single quotes'];
 
     return (
         <>
@@ -91,7 +91,7 @@ const Characters = () => {
             <Text>Example:</Text>
             <View style={styles.codeBox}>
                 <Text style={styles.blockCodeText}>
-                    {`let y: f32 = 3.0;`}
+                    {`let z: char = 'Z';`}
                 </Text>
             </View>
 
@@ -229,11 +229,8 @@ export default function Vars() {
             </View>
             <View style={styles.box}>
                 <Text><Text style={{ fontWeight: 'bold' }}>Shadows</Text> are using the same variable name to
-                    declare a new variable. Different than a mutable variable. This is creating a completely different
+                    declare a new variable. It is different than a mutable variable. This is creating a completely different
                     variable. It is useful to change the type of variable, but keep the same name for readability.</Text>
-                <View style={styles.codeBox}>
-                    <Text style={styles.blockCodeText}>const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;</Text>
-                </View>
             </View>
             <View style={[styles.box, { flexDirection: 'row', alignItems: 'center', gap: width * 0.02 }]}>
                 <Text style={styles.title}>Data Types</Text>

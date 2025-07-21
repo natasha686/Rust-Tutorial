@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, Text, View, Image } from "react-native";
 
 const { height, width } = Dimensions.get('window');
 
@@ -129,6 +129,9 @@ move ownership instead of interacting with
 the value through a reference. `}</Text>
                     </View>
                 </View>
+            </View>
+            <View style={{ alignItems: 'center' }}>
+                <Image source={require('../../assets/images/rustacean-flat-gesture.png')} />
             </View>
         </View >
     )
